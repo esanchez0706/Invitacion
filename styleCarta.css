@@ -1,0 +1,96 @@
+body {
+	 background: #333;
+}
+ .st0 {
+	 fill: #7bbb5e;
+}
+ .st1 {
+	 fill: #e5e5e5;
+}
+ .st2 {
+	 fill: #222;
+}
+ .st3 {
+	 fill: #f43b7a;
+}
+ .st4 {
+	 fill: #ea4c89;
+}
+ .st5 {
+	 fill: #f9f9f9;
+}
+ .st6 {
+	 fill: #c52563;
+}
+ .st7 {
+	 fill: #ff4b8c;
+}
+ .st8 {
+	 fill: #fff;
+}
+ svg {
+	 width: 700px;
+	 margin: 50px auto;
+	 display: block;
+}
+ #invitation {
+	 animation: send 0.7s ease;
+	 position: absolute;
+	 display: block;
+	 animation-delay: 1s;
+	 transform-origin: center;
+}
+ .line {
+	 stroke-width: 10px;
+	 stroke-linecap: round;
+	 stroke: #7bbb5e;
+	 stroke-dasharray: 26;
+}
+ .line.up {
+	 stroke-dashoffset: 28;
+	 animation: stripes-up 0.5s linear;
+	 animation-delay: 0.5s;
+}
+ .line.down {
+	 stroke-dashoffset: -25;
+	 animation: stripes-down 0.5s linear;
+	 animation-delay: 0.5s;
+}
+ #circle {
+	 transform: scale(0);
+	 animation: bounce 0.55s ease-out forwards;
+	 transform-origin: center;
+}
+ #number {
+	 opacity: 0;
+	 animation: show 0.2s ease forwards;
+	 animation-delay: 0.5s;
+}
+ @keyframes send {
+	 100% {
+		 transform: translate(0px, -150px);
+	}
+}
+ @keyframes stripes-down {
+	 100% {
+		 stroke-dashoffset: 23;
+		 opacity: 0;
+	}
+}
+ @keyframes stripes-up {
+	 100% {
+		 stroke-dashoffset: -22;
+		 opacity: 0;
+	}
+}
+ @keyframes bounce {
+	 100% {
+		 transform: scale(1);
+	}
+}
+ @keyframes show {
+	 100% {
+		 opacity: 1;
+	}
+}
+ 
