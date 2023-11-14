@@ -68,7 +68,7 @@ $(document).ready(function(){
       $("#hojaDeDeNieve").attr("href", "styleNieve.css");
       $("#hojaDeInformacion").attr("href", "styleNieve.css.css");
       $("#hojaDeTexto").attr("href", "styleInformacion.css");
-      $('.padin').hide();
+      $('#padin').hide();
 
       
     }, 17000);
