@@ -5,20 +5,18 @@ $(document).ready(function(){
   $('#transiciones').hide();
   $('#fotomensaje').hide();
   $('#fondoArbol').hide();
-  $('#fiestaPancho').hide();
   $('#informacionCarta').hide();
   $('#santa').hide();
-
   $("html, body").animate({ scrollTop: 0 }, 0);
-  
   $("#hojaDeMensajes").attr("href", "styleGeneral.css");
   $("#hojaDeDeNieve").attr("href", "styleGeneral.css");
   $("#hojaDeSanta").attr("href", "styleGeneral.css");
-
+  $('#mensaje5').hide();
+  
  
   
   $('#notice').on('click', function(event) {
-
+  
     $('.cuentaRegresiva').hide();
     $("#hojaDeCarta").attr("href", "styleGeneral.css");
     $("#hojaDeInformacion").attr("href", "styleGeneral.css");
@@ -32,18 +30,21 @@ $(document).ready(function(){
     $('#mensajes').show();
     
     $("#animacion").trigger("click"); // activar boton
-
+   
     setTimeout(function(){ 
       $("#animacion").trigger("click"); // activar boton 
       $('#fondoArbol').show();
+   
     }, 12000);
     
     setTimeout(function(){
+      $('#mensaje5').show();
       $('#fondoArbol').hide();
       $('#mensaje1').hide();
       $('#mensaje2').hide();
       $('#mensaje3').hide();
       $('#mensaje4').hide();
+  
       $("#animacion").trigger("click"); // activar boton de enviar formulario
       $('#fiestaPancho').show();
       
@@ -56,8 +57,8 @@ $(document).ready(function(){
       $('#fiestaPancho').hide();
       $("#hojaDeEstilofondo").attr("href", "styleNieve.css");
       $('#informacionCarta').show();
-      
-      
+
+        
     }, 17000);
 
     setTimeout(function(){
@@ -68,7 +69,7 @@ $(document).ready(function(){
       $("#hojaDeInformacion").attr("href", "styleNieve.css.css");
       $("#hojaDeTexto").attr("href", "styleInformacion.css");
       $('#padin').hide();
-  
+
       
     }, 17000);
 
